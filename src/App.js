@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import BasicTitle from './components/BasicTitle'
+import ComplexTitle from './components/ComplexTitle'
+import {DefaultButton, HipsterComponent} from './components/DefaultButton'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+       <BasicTitle>styled components</BasicTitle>
+       <BasicTitle special>styled components</BasicTitle>
+       <DefaultButton>click me</DefaultButton>
+       <HipsterComponent>click me</HipsterComponent>
+       <ComplexTitle title='Complex Title'></ComplexTitle>
+    </>
+  )
 }
 
 export default App;
