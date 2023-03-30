@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import BasicTitle from './components/BasicTitle'
 import Card from './components/Card'
 import ComplexTitle from './components/ComplexTitle'
@@ -7,6 +7,8 @@ import GlobalStyles from './global-styles'
 import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
 import Loading from './components/Loading'
+
+
 
 
 const BaseTheme = {
@@ -36,7 +38,10 @@ function App() {
        <DefaultButton>click me</DefaultButton>
        <HipsterComponent>click me</HipsterComponent>
        <ComplexTitle title='Complex Title'></ComplexTitle> */}
-       <Loading />
+       {/* <Loading /> */}
+       {/* <HipsterComponent css={`color: red`}>load more</HipsterComponent>
+       <HipsterComponent>load more</HipsterComponent>
+       <HipsterComponent as='a' href='https://www.pexels.com/photo/asian-woman-swimming-in-calm-water-of-river-4946595/'>load more</HipsterComponent> */}
        {/* <ThemeProvider theme={theme ? BaseTheme : DarkTheme}>
        <GlobalStyles />
           <Card />
@@ -45,6 +50,8 @@ function App() {
             <button className='btn' onClick={toggleMe}>toggle me</button>
           </Conteiner>
        </ThemeProvider> */}
+       <DefaultButton type='submit'>click me</DefaultButton>
+       <DefaultButton large>click me</DefaultButton>
     </>
   )
 }
