@@ -18,7 +18,7 @@ export const DefaultButton = styled.button.attrs((props) => {
       padding:0.5rem
       font-size:1rem
       font-weight:400
-    `}
+  `}
   padding:0.5rem;
   display:block;
   width:200px;
